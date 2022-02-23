@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&display=swap');
+
+*{
+    font-family: 'Eczar', serif;
+}
+
+body{
+    background-color: rgb(48, 59, 77);
+}
+
+div#quote{
+    animation-duration: 3s;
+    animation-name: slidein;
+    font-size: 36px;
+    line-height: 1.4;
+}
+
+div#movie{
+   
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+@keyframes slidein {
+    from{
+        opacity: 0;
+        margin-left: 40px;
+    }
+
+    to{
+        opacity: 100;
+        margin-left: 0px;
+    }
+}
+
+div#year{
+    font-size: 22px;
+    text-align: right;
+}
+
+div.flex{
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+button#getQuote{
+    width: 175px;
+    background-color:rgb(39, 65, 54);
+    color: white;
+    padding:10px;
+}
+
+section{
+    width: 60%;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:rgb(216, 167, 102);
+    padding: 20px;
+}
+
+div#button{
+    margin-top: 20px;
+    text-align: center;
+}
+
+div#wrapper{
+    margin-left:auto;
+    margin-right:auto;
+    background-color:beige;
+    padding:20px;
+    width: 75%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
