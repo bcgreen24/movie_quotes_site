@@ -8,9 +8,13 @@ body{
     background-color: rgb(48, 59, 77);
 }
 
-div#quote{
+.slidefromright{
     animation-duration: 3s;
     animation-name: slidein;
+}
+
+div#quote{
+
     font-size: 36px;
     line-height: 1.4;
 }
@@ -29,7 +33,7 @@ div#movie{
     }
 
     to{
-        opacity: 100;
+        opacity: 1;
         margin-left: 0px;
     }
 }

@@ -1,8 +1,9 @@
-const url = 'http://www.somelonelydistantplanet.com:8090/movie_quote';
+const url = 'https://moviequotes.motioncode.biz:8090/movie_quote';
 
 getMovieQuote(url);
 
 document.getElementById("getQuote").onclick = function(){
+    document.getElementById("quote").classList.remove("slidefromright");
     getMovieQuote(url);
 }
 
@@ -14,7 +15,7 @@ async function getMovieQuote(url){
 }
 
 function display(data){
-    console.log(data)
+    document.getElementById("quote").classList.add("slidefromright");
     document.getElementById("quote").innerHTML = data.Quote;
     document.getElementById("movie").innerHTML = data.Movie;
     document.getElementById("year").innerHTML = data.Year;
